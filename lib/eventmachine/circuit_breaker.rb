@@ -1,4 +1,5 @@
 require "eventmachine/circuit_breaker/version"
+require "eventmachine/circuit_breaker/rw_mutex"
 require "eventmachine/circuit_breaker/breaker"
 require "eventmachine/circuit_breaker/strategy/basic"
 

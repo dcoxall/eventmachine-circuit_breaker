@@ -7,6 +7,7 @@ module EventMachine
 
       def request(client, headers, body)
         close!(client) if strategy.open?
+        [client, headers]
       end
 
       def response(client)
