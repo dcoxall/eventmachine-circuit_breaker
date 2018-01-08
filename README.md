@@ -41,7 +41,7 @@ end
 
 # sharing circuit state
 EventMachine.run do
-  circuit_strategy = EventMachine::CircuitBreaker::Startegy::Basic.new
+  circuit_strategy = EventMachine::CircuitBreaker::Strategy::Basic.new
 
   connection_1 = EventMachine::HttpRequest.new("http://example.com/foo")
   connection_1.use EventMachine::CircuitBreaker, strategy: circuit_strategy
